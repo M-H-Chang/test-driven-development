@@ -28,6 +28,11 @@ function numberOfOccurrencesInText(word, text) {
   return wordCount;
 }
 
+function boldPassage(word, text) {
+  return "<p>" + text + "</p>";
+}
+
+
 
 
 
