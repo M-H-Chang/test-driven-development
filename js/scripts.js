@@ -1,0 +1,32 @@
+// -----Business Logic-----
+function wordCounter(text) {
+  if (text.trim().length === 0) {
+    return 0;
+  }
+  function numberOfOccurrencesInText(word, text) {
+    if (text.trim().length === 0) {
+      return 0;
+    }
+    const wordArray = text.split(" ");
+    let wordCount = 0;
+    wordArray.forEach(function (element) {
+      if (word === element) {
+        wordCount++
+      }
+    });
+    return wordCount;
+  }
+
+  let wordCount = 0
+  const wordArray = text.split(" ");
+  wordArray.forEach(function (element) {
+    if (!Number(element)) {
+      wordCount++;
+    }
+  });
+  return wordCount;
+}
+
+
+
+// -----User Interface Logic-----
